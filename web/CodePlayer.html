@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"/>
+
+    <meta charset="UTF-8">
+    <title>CodePlayer</title>
+   <style>
+       body{
+           margin: 0;
+           padding: 0;
+       }
+       #bar{
+           height: 50px;
+           background-color: aliceblue;
+           clear: both;
+       }
+       h3{
+           margin-top: 10px;
+           float: left;
+           text-decoration-style: solid;
+       }
+       #buttonBar{
+           /*margin-top: 10px;*/
+           /*margin-left: 300px;*/
+           width: 300px;
+           border-radius: 5px;
+           position: relative;
+           margin: 0 auto;
+       }
+       button{
+           border: none;
+           text-align: center;
+           height: 25px;
+          float: left;
+       }
+       #run{
+           float: right;
+           height: 25px;
+           background-color: darkgrey;
+       }
+
+    #html{
+        border-right:2px ;
+        height: 100%;
+        border-color: black;
+        float: left;
+        width: 50%;
+    }
+    #css{visibility: visible;
+        width: 200px;
+        background-color: green;
+        float: left;
+        width: 50%;
+    }
+    #jquery{
+        visibility: visible;
+        float: left;
+        width: 50%;
+    }
+    #result{
+        width: auto;float: left;
+        visibility: visible;
+        width: 50%;
+    }
+   </style>
+    <script>
+        var pageHeight=$(window).height();
+        var menuHeight=$("#bar").height();
+        alert(pageHeight);
+        alert("nono");
+
+    </script>
+</head>
+<body>
+    <div id="bar" >
+        <h3>CODE Player</h3>
+        <div id="buttonBar">
+            <button id="htmlb">HTML</button>
+            <button id="cssb">CSS</button>
+            <button id="jqueryb">JQUERY</button>
+            <button id="resultb">RESULT</button>
+        </div>
+        <button id="run" style="padding: 5px">RUN</button>
+    </div>
+    <div id="html">sdf</div>
+    <div id="css"></div>
+    <div id="jquery"></div>
+    <div id="result" >alert("7");</div>
+
+
+
+</body>
+</html>
